@@ -11,7 +11,8 @@ import KnowledgeGraph from "../components/KnowledgeGraph";
 import WineMatchingDemo from "../components/WineMatchingDemo";
 import WhatIfSimulator from "../components/WhatIfSimulator";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// Vercel 단일 배포 — 상대 경로로 자체 Route Handlers 호출 (/api/v1/...)
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "";
 
 type Tab = "today" | "diagnosis" | "action";
 type ActionMode = "wine-match" | "what-if";
