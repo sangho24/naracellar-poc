@@ -1,0 +1,35 @@
+# ─── Next.js / Node ─────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# ─── 환경변수 (절대 commit 금지) ────────────────────────
+.env
+.env.local
+.env*.local
+frontend/.env
+frontend/.env.local
+
+# ─── 에디터 / 시스템 ────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ─── 파이썬 (혹시 남은 잔여물) ──────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ─── 빌드 / 캐시 ────────────────────────────────────────
+*.log
+.cache/
+
+# ─── 임시 파일 ──────────────────────────────────────────
+*.tmp
+*.bak

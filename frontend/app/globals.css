@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 나라셀라 라이트 모드 토큰 */
+    --bg-canvas: #faf9f6;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f3f1ec;
+    --border-subtle: #e8e5de;
+    --border-emphasis: #d4cfc4;
+    --text-primary: #1a1410;
+    --text-secondary: #3d342d;
+    --text-muted: #6f6760;
+    --text-faint: #a8a29e;
+
+    /* 브랜드 */
+    --brand-primary: #9a253c;
+    --brand-primary-dark: #7d1e32;
+    --brand-primary-soft: #fbeef1;
+    --brand-accent: #b89a65;
+    --brand-accent-soft: #f2ebdb;
+
+    /* 시맨틱 */
+    --positive: #2d7d3f;
+    --warning: #b45309;
+    --danger: #c7373b;
+  }
+
+  html {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+  }
+
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* 카드 표면 */
+  .surface {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+  }
+  .surface-hover:hover {
+    border-color: var(--border-emphasis);
+  }
+}
